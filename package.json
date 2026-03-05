@@ -1,0 +1,44 @@
+{
+  "name": "threejs_test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-installation": "webpack --config ./src/client/installation.prod.js",
+    "dev-installation": "webpack serve --config ./src/client/installation.dev.js",
+    "build-scroll": "webpack --config ./src/client/scrollVideo.prod.js",
+    "dev-scroll": "webpack serve --config ./src/client/scrollVideo.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/server/server.js"
+  },
+  "author": "Amogh Jadhav",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dat.gui": "^0.7.7",
+    "@types/express": "^4.17.7",
+    "@types/node": "^13.13.15",
+    "@types/three": "^0.130.0",
+    "three": "^0.130.1",
+    "three-orbit-controls": "^82.1.0",
+    "ts-loader": "^9.2.3",
+    "ts-shader-loader": "^1.0.6",
+    "typescript": "^3.8.3",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "body-parser": "^1.19.0",
+    "crypto-browserify": "^3.12.0",
+    "draco3d": "^1.4.1",
+    "express": "^4.17.1",
+    "matter-js": "^0.17.1",
+    "morgan": "^1.10.0",
+    "raw-loader": "^4.0.2",
+    "stats.js": "^0.17.0",
+    "three-lens-distortion": "github:ycw/three-lens-distortion",
+    "three.interaction": "^0.2.3",
+    "troika-three-text": "^0.42.0"
+  }
+}
